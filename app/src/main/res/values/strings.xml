@@ -19,8 +19,8 @@
     <string name="label_setting_locale_summary">Change Your Application Language</string>
     <string name="label_setting_locale_title">Change Application Language</string>
     <string name="action_notification">Notification</string>
-    <string name="label_alarm_daily_reminder">Good morning! Ready to pick your new movies today?</string>
-    <string name="label_alarm_released_today">, Now On Cinema!</string>
+    <string name="label_alarm_daily_reminder">Good morning! Ready to watch your new movies today?</string>
+    <string name="label_alarm_released_today">,Is Coming! Come On! Watch Now! Only On Cinema!</string>
     <string name="label_daily_reminder">Daily Reminder Notification is now</string>
     <string name="label_activated">Activated !</string>
     <string name="label_deactivated">Deactivated !</string>

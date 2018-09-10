@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.preference.Preference;
 import android.preference.PreferenceFragment;
 import android.provider.Settings;
+import android.util.Log;
 import android.widget.Toast;
 
 import butterknife.BindString;
@@ -51,8 +52,10 @@ public class MyPreferenceFragment extends PreferenceFragment implements Preferen
 
         if (key.equals(reminder_daily)) {
             if (isOn) {
-                movieReceiver.setRepeatingAlarm(getActivity(), MovieReceiver.TYPE_REPEATING, "07:00", getString(R.string.label_alarm_daily_reminder));
-            } else {
+                String timeDaily = "20:24";
+                movieReceiver.setRepeatingAlarm(getActivity(), MovieReceiver.TYPE_REPEATING, timeDaily, getString(R.string.label_alarm_daily_reminder));
+            }
+            else {
                 movieReceiver.cancelAlarm(getActivity(), MovieReceiver.TYPE_REPEATING);
             }
             return true;
@@ -60,7 +63,8 @@ public class MyPreferenceFragment extends PreferenceFragment implements Preferen
 
         else if (key.equals(released_today)) {
             if (isOn) {
-                movieReceiver.setRepeatingAlarm(getActivity(), MovieReceiver.TYPE_RELEASED, "08:00", getString(R.string.label_alarm_released_today));
+                String timeRelease = "08:00";
+                movieReceiver.setRepeatingAlarm(getActivity(), MovieReceiver.TYPE_RELEASED, timeRelease, getString(R.string.label_alarm_released_today));
             }
             else{
                 movieReceiver.cancelAlarm(getActivity(), MovieReceiver.TYPE_RELEASED);

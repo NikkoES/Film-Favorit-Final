@@ -19,8 +19,8 @@
     <string name="label_setting_locale_summary">Ganti Bahasa Aplikasi</string>
     <string name="label_setting_locale_title">Ganti Bahasa Aplikasi</string>
     <string name="action_notification">Notifikasi</string>
-    <string name="label_alarm_daily_reminder">Selamat Pagi! Sudah cek Film Hari ini?</string>
-    <string name="label_alarm_released_today">, Sekarang ada di Bioskop!</string>
+    <string name="label_alarm_daily_reminder">Selamat Pagi! Siap untuk menonton film baru hari ini?</string>
+    <string name="label_alarm_released_today">, Sudah Tayang! Ayuk! Tonton Sekarang! Hanya ada di Bioskop!</string>
     <string name="label_daily_reminder">Notifikasi Pengingat Setiap Hari</string>
     <string name="label_activated">Aktif !</string>
     <string name="label_deactivated">Tidak Aktif !</string>

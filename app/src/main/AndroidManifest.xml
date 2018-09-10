@@ -19,14 +19,10 @@
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <provider
-            android:name=".provider.FavoriteProvider"
-            android:authorities="io.github.nikkoes.katalogfilm"
-            android:exported="true"
-            android:readPermission="io.github.nikkoes.katalogfilm.READ_DATABASE"
-            android:writePermission="io.github.nikkoes.katalogfilm.WRITE_DATABASE" />
 
-        <activity android:name=".activity.MainActivity">
+        <activity
+            android:name=".activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,6 +33,13 @@
         <activity android:name=".activity.SearchMovieActivity" />
         <activity android:name=".activity.SettingsActivity" />
 
+        <provider
+            android:name=".provider.FavoriteProvider"
+            android:authorities="io.github.nikkoes.katalogfilm"
+            android:exported="true"
+            android:readPermission="io.github.nikkoes.katalogfilm.READ_DATABASE"
+            android:writePermission="io.github.nikkoes.katalogfilm.WRITE_DATABASE" />
+
         <receiver android:name=".widget.StackWidget">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -46,6 +49,11 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/stack_widget_info" />
         </receiver>
+
+        <receiver
+            android:name=".scheduler.MovieReceiver"
+            android:enabled="true"
+            android:exported="true" />
 
         <service
             android:name=".widget.StackWidgetService"

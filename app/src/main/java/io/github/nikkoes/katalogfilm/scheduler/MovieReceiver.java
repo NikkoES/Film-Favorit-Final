@@ -26,6 +26,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+import static android.content.Context.NOTIFICATION_SERVICE;
+
 public class MovieReceiver extends BroadcastReceiver {
 
     public static final String TYPE_RELEASED = "ReleasedTodayAlarm";
@@ -55,15 +57,18 @@ public class MovieReceiver extends BroadcastReceiver {
 
         if (message.equals(context.getResources().getString(R.string.label_alarm_released_today))){
             getTitleMovie(context, notifId);
+            Log.e("OKAY :", "Release");
         }
         else {
             showAlarmNotification(context, title, message, notifId);
+            Log.e("OKAY :", "Daily");
         }
 
     }
 
     private void showAlarmNotification(Context context, String title, String message, int notifId){
-        NotificationManager notificationManagerCompat = (NotificationManager) context.getSystemService(Context.NOTIFICATION_SERVICE);
+
+        NotificationManager notificationManagerCompat = (NotificationManager) context.getSystemService(NOTIFICATION_SERVICE);
         Uri alarmSound = RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION);
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context)
                 .setSmallIcon(R.drawable.ic_launcher_background)
