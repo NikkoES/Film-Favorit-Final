@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Katalog Film</string>
+    <string name="detail_movie">Detail Film</string>
+
+    <string name="upcoming">Akan Tayang</string>
+    <string name="now_playing">Sedang diputar</string>
+    <string name="favorite">Favorit</string>
+
+    <string name="title_activity_settings">Pengaturan</string>
+
+    <string name="setting_category_language">Bahasa</string>
+    <string name="title_change_language">Ganti Bahasa</string>
+    <string name="subtitle_change_language">Ganti Bahasa Aplikasi</string>
+
+    <string name="setting_category_notifications">Notifikasi</string>
+    <string name="daily_reminder">Pengingat Setiap Hari</string>
+    <string name="released_today">Pengingat Rilis Film</string>
+    <string name="label_setting_daily_reminder_summary">Matikan/Nyalakan Notifikasi</string>
+    <string name="label_setting_locale_summary">Ganti Bahasa Aplikasi</string>
+    <string name="label_setting_locale_title">Ganti Bahasa Aplikasi</string>
+    <string name="action_notification">Notifikasi</string>
+    <string name="label_alarm_daily_reminder">Selamat Pagi! Sudah cek Film Hari ini?</string>
+    <string name="label_alarm_released_today">, Sekarang ada di Bioskop!</string>
+    <string name="label_daily_reminder">Notifikasi Pengingat Setiap Hari</string>
+    <string name="label_activated">Aktif !</string>
+    <string name="label_deactivated">Tidak Aktif !</string>
+
+    <string name="key_setting_locale">key_setting_locale</string>
+    <string name="key_daily_reminder">key_daily_reminder</string>
+    <string name="key_released_today">key_released_today</string>
+
+    <string name="favorite_movie">Film Favorit</string>
+    <string name="have_not_favorite">Kamu belum punya film favorit !</string>
+
+</resources>
